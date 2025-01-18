@@ -10,6 +10,12 @@ Converter:
 ```bash
 ffmpeg -i entrada.mp4 saída.avi
 ```
+
+Forçar a taxa de quadros:
+```bash
+ffmpeg -i entrada.avi -r 24 saída.mp4
+```
+
 Definir a taxa de bits do vídeo:
 ```bash
 ffmpeg -i entrada.avi -b:v 64k -bufsize 64k saída.mp4
