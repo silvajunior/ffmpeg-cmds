@@ -30,3 +30,7 @@ Juntar o Vídeo Original e o Áudio Original (Recombinar):
 ```bash
 ffmpeg -i video_original.mp4 -i audio_original.aac -c:v copy -c:a copy output_video_combined.mp4
 ```
+Aumentar áudio do Vídeo
+```bash
+ffmpeg -i input.mp4 -af "volume=4" output.mp4
+```
